@@ -1,0 +1,75 @@
+/* Set the background color for the entire screen */
+body {
+  background-color: #f1e0c6; /* Light brown background for the page */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title text */
+h1 {
+  text-align: center;
+  color: #4a3b31; /* Darker brown color for text */
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+/* Container for products */
+.product-container {
+  padding: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background-color: #d8c4a3; /* Light brown card background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: left; /* Align text to the left */
+  display: flex;
+  flex-direction: column; /* Ensure text stays vertical */
+  justify-content: flex-start; /* Align items to the top */
+}
+
+
+.product-card h3 {
+  color: #4a3b31; /* Dark brown for the product name */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  color: #6f5b47; /* Medium brown text color */
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.delete-btn {
+  background-color: #9b7b4f; /* Soft brown for the button */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #7a5c3f; /* Slightly darker brown on hover */
+}
+
+/* Empty products message */
+.product-container p {
+  text-align: center;
+  color: #6f5b47; /* Medium brown */
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
